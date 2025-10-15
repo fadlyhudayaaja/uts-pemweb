@@ -342,11 +342,11 @@ header {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
-    font-size: 12.5px;
+    font-size: 13px;
   }
 
   th, td {
-    padding: 6px;
+    padding: 8px;
   }
 
   /* Gambar kode biar pas di layar kecil */
@@ -380,5 +380,6 @@ header {
     font-size: 1.1em;
   }
 }
+
 
 
