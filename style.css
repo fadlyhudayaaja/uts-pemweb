@@ -295,54 +295,35 @@ header {
 /* ===================== */
 @media (max-width: 768px) {
   /* Header */
- /* ===================== */
-/* RESPONSIVE DESIGN 📱  */
-/* ===================== */
-@media (max-width: 768px) {
-  /* Header */
   header {
     flex-direction: column;
     text-align: center;
     padding: 10px;
   }
 
-  .header-buttons {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: 0;
-    gap: 6px; /* jarak antar tombol */
-  }
-
-  .header-buttons button {
-    font-size: 13px;      /* ukuran teks sedikit lebih kecil */
-    padding: 5px 8px;     /* ukuran tombol lebih ramping */
-    border-radius: 6px;   /* sudut membulat halus */
-    margin: 2px;          /* jarak antar tombol */
-  }
-
   .title-button {
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
   }
-}
 
-@media (max-width: 480px) {
+  /* Tombol sejajar di bawah judul */
   .header-buttons {
-    gap: 4px; /* sedikit jarak antar tombol */
+    display: flex;
+    justify-content: center; /* tombol rata tengah */
+    flex-wrap: wrap;         /* biar kalau kebanyakan, turun ke baris baru */
+    gap: 6px;                /* jarak antar tombol */
+    margin: 0 auto 10px auto;
   }
 
   .header-buttons button {
-    width: auto;          /* tidak full 100%, biar sejajar */
-    font-size: 12px;      /* lebih kecil di layar sangat kecil */
-    padding: 4px 6px;     /* tombol ramping */
+    font-size: 13px;
+    padding: 6px 10px;
+    border-radius: 6px;
     margin: 2px;
-    border-radius: 5px;   /* tetap lembut */
   }
 
-  .title-button {
-    font-size: 1.2em;
-  }
-}
   /* Container */
   .container {
     width: 90%;
@@ -361,11 +342,11 @@ header {
     height: auto;
   }
 
-  /* Tabel */
+  /* Tabel tetap seperti sebelumnya */
   table {
     display: block;
-    overflow-x: auto;   /* bisa digeser ke samping */
-    white-space: nowrap; /* mencegah teks pecah baris */
+    overflow-x: auto;
+    white-space: nowrap;
     font-size: 13px;
   }
 
@@ -373,37 +354,25 @@ header {
     padding: 8px;
   }
 
-  /* Gambar kode biar pas di layar kecil */
   .code-image {
     max-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  .header-buttons button {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-
-  th, td {
-    font-size: 12px;
-    padding: 6px;
-  }
-
-  h2 {
-    font-size: 1.1em;
-  }
-
-  p {
-    font-size: 14px;
-  }
-
   .title-button {
     font-size: 1.2em;
   }
+
+  .header-buttons {
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .header-buttons button {
+    width: auto;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 5px;
+  }
 }
-
-
-
-
-
