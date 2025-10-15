@@ -305,18 +305,15 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin-right: 0;
-    gap: 6px; /* jarak antar tombol */
   }
 
   .header-buttons button {
-    font-size: 13px;      /* ukuran teks tombol */
-    padding: 5px 8px;     /* ukuran tombol lebih kecil */
-    border-radius: 6px;   /* sudut membulat halus */
-    margin: 2px;          /* jarak antar tombol */
+    font-size: 14px;
+    padding: 6px 10px;
   }
 
   .title-button {
-    font-size: 1.3em;
+    font-size: 1.4em;
     margin-bottom: 10px;
   }
 
@@ -338,11 +335,11 @@ header {
     height: auto;
   }
 
-  /* Tabel tetap seperti semula */
+  /* Tabel */
   table {
     display: block;
-    overflow-x: auto;
-    white-space: nowrap;
+    overflow-x: auto;   /* bisa digeser ke samping */
+    white-space: nowrap; /* mencegah teks pecah baris */
     font-size: 13px;
   }
 
@@ -357,15 +354,9 @@ header {
 }
 
 @media (max-width: 480px) {
-  .header-buttons {
-    gap: 4px;
-  }
-
   .header-buttons button {
-    width: auto;          /* tidak full satu baris */
-    font-size: 12px;      /* lebih kecil */
-    padding: 4px 7px;     /* lebih ramping */
-    margin: 2px;
+    width: 100%;
+    margin-bottom: 5px;
   }
 
   th, td {
@@ -385,5 +376,7 @@ header {
     font-size: 1.2em;
   }
 }
+
+
 
 
