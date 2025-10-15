@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <button class="title-button" onclick="goToProfile()">Profil Mahasiswa</button>
+      <div class="header-buttons">
+        <button onclick="goToSchedule()">Lihat Jadwal Kuliah 📅</button>
+        <button onclick="goTotutorial()">Tutorial</button>
+        <button onclick="goTopesankesan()">Pesan & Kesan</button>
+        <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+      </div>
+    </header>
+  <div class="container" id="profile-container">
+  <div class="profile-section">
+    <img src="WhatsApp Image 2025-08-30 at 22.06.50_8c7b4399.jpg" 
+         alt="Foto Mahasiswa" 
+         onclick="toggleSplitView()">
+  </div>
+  <div class="info-section">
+    <h2>Data Diri</h2>
+    <p><b>Nama Lengkap:</b> Fadly Hudaya Simanjuntak</p>
+    <p><b>NIM:</b> 241401017</p>
+    <p><b>Kom:</b> B</p>
+    <p><b>Hobi:</b> Nonton, Futsal, Badminton, Bermain Game, Tidur</p>
+    <p><b>Motto Hidup:</b> "Before You Learn And Then You Remove The L."</p>
+
+    <h2>Perkenalan Singkat</h2>
+    <p>Halo, Nama saya Fadly Hudaya Simanjuntak biasa dipanggil Fadly. Saya mahasiswa S1 Ilmu Komputer di Universitas Sumatera Utara.</p>
+
+    <h2 id="jadwal">Jadwal Kuliah</h2>
+      <table>
+        <tr>
+          <th>Hari</th>
+          <th>Mata Kuliah</th>
+          <th>Waktu</th>
+          <th>Ruangan</th>
+        </tr>
+        <tr>
+          <td>Senin</td>
+          <td>
+            <ul>
+              <li>Retorika</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>10:30 - 12:10</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Ruang A.102</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Selasa</td>
+          <td>
+            <ul>
+              <li>IELTS Preparation</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>10:30 - 12:10</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Ruang D.101</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Rabu</td>
+          <td>
+            <ul>
+              <li>Basis Data</li>
+              <li>Wirausaha Digital</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>10:30 - 13:00</li>
+              <li>13:50 - 15:30</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Ruang D-106</li>
+              <li>Ruang D-101</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Kamis</td>
+          <td>
+            <ul>
+              <li>Struktur Data</li>
+              <li>Pemrograman Web</li>
+              <li>Kecerdasan Buatan</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>08:00 - 10:30</li>
+              <li>12:10 - 14:40</li>
+              <li>13:00 - 15:30</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>Ruang D-105</li>
+              <li>Ruang D-105</li>
+              <li>Ruang D-101</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>Jumat</td>
+          <td>
+            <ul>
+              <li>Etika Profesi</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>14:00 - 15:40</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li>-</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="container" id="tutorial">
+  <h2>Tutorial Belajar Web Development</h2>
+  <p>Berikut adalah penjelasan singkat mengenai empat komponen utama dalam membuat website modern:</p>
+    <ul class="tutorial-list">
+      <li>
+        <b>🧱 1. HTML (HyperText Markup Language)</b> 
+        <p>📖 Pengertian: </p>
+        <p>HTML adalah bahasa dasar yang digunakan untuk <b>membangun struktur dari sebuah halaman web</b>. Ia berfungsi sebagai <b>kerangka utama yang menampung seluruh elemen</b> seperti teks, gambar, tabel, video, tautan, dan tombol. Setiap elemen diatur menggunakan tag-tag tertentu. Tanpa HTML, browser tidak akan tahu bagaimana menampilkan konten halaman, sebab HTML berperan sebagai fondasi utama dari seluruh tampilan situs web.</p>
+
+        <p>⚙️ Fungsi utama:</p>
+        <p>Fungsi utama HTML adalah membentuk struktur dan susunan konten pada halaman web agar bisa ditampilkan secara teratur dan mudah dipahami oleh pengguna maupun mesin pencari. HTML memungkinkan pengembang menentukan bagian-bagian penting dari sebuah situs seperti header, body, dan footer. Ia juga menjadi wadah bagi teknologi lain seperti CSS dan JavaScript untuk bekerja menambahkan tampilan dan interaktivitas, sehingga menciptakan pengalaman pengguna yang utuh dan menarik.</p>
+
+        <p>💻 Contoh Kode HTML:</p>
+        <img src="code1.png" alt="Contoh kode HTML" class="code-image">
+      </li>
+      <li>
+        <b>🎨 2. CSS (Cascading Style Sheets)</b> 
+        <p>📖 Pengertian: </p>
+        <p>CSS adalah bahasa yang digunakan untuk <b>mengatur tampilan visual dari elemen-elemen HTML</b>. Jika HTML adalah kerangkanya, maka CSS adalah pakaian dan gaya yang membuat halaman web terlihat menarik. Dengan CSS, pengembang dapat mengatur warna, jenis huruf, tata letak, jarak antar elemen, dan efek animasi yang memperindah tampilan website.</p>
+
+        <p>⚙️ Fungsi utama:</p>
+        <p>Fungsi utama CSS adalah memisahkan antara konten dan tampilan visual agar lebih mudah dikelola. Dengan CSS, perubahan desain dapat dilakukan secara efisien tanpa mengubah struktur HTML. Selain itu, CSS memungkinkan desain web yang responsif, yaitu tampilan situs yang otomatis menyesuaikan ukuran layar perangkat seperti komputer, tablet, atau smartphone. Hal ini membuat pengalaman pengguna menjadi lebih nyaman dan konsisten di berbagai perangkat.</p>
+
+        <p>💻 Contoh Kode CSS:</p>
+        <img src="code2.png" alt="Contoh kode HTML" class="code-image">
+      </li>
+      <li>
+        <b>⚡ 3. JavaScript</b> 
+        <p>📖 Pengertian: </p>
+        <p>JavaScript adalah bahasa pemrograman yang <b>membuat halaman web menjadi interaktif dan dinamis</b>. Tidak seperti HTML dan CSS yang bersifat statis, JavaScript memungkinkan halaman web bereaksi terhadap tindakan pengguna seperti klik, input teks, atau pergerakan mouse. Ia juga digunakan untuk mengatur data, membuat animasi, hingga berkomunikasi dengan server tanpa harus memuat ulang halaman.</p>
+
+        <p>⚙️ Fungsi utama:</p>
+        <p>Fungsi utama JavaScript adalah menambahkan logika dan interaktivitas ke dalam halaman web. Dengan JavaScript, pengembang dapat membuat fitur-fitur seperti menu drop-down, slideshow gambar, validasi formulir, serta berbagai efek visual menarik. Selain itu, JavaScript menjadi dasar bagi banyak framework modern seperti React, Vue, dan Angular yang digunakan untuk membangun aplikasi web kompleks dan real-time.</p>
+
+        <p>💻 Contoh Kode JavaScript:</p>
+        <img src="code3.png" alt="Contoh kode HTML" class="code-image">
+      </li>
+      <li>
+        <b>💠 4. Tailwind CSS</b> 
+        <p>📖 Pengertian: </p>
+        <p>Tailwind CSS adalah framework CSS modern yang berbasis pada sistem utility-first, artinya ia <b>menyediakan kumpulan class siap pakai</b> seperti bg-blue-500, text-center, atau rounded-lg yang bisa langsung digunakan di HTML. Dengan pendekatan ini, pengembang tidak perlu menulis CSS panjang dari nol, melainkan tinggal menggabungkan class sesuai kebutuhan desain.</p>
+
+        <p>⚙️ Fungsi utama:</p>
+        <p>Fungsi utama Tailwind CSS adalah mempercepat proses pembuatan desain web yang modern dan responsif. Framework ini membantu pengembang menciptakan tampilan profesional dengan efisien, konsisten, dan mudah dikustomisasi. Tailwind juga sangat fleksibel karena mendukung tema, warna, dan ukuran yang bisa diatur sesuai kebutuhan proyek. Dengan struktur modularnya, Tailwind membuat proses desain lebih cepat tanpa mengorbankan kualitas visual.</p>
+
+        <p>💻 Contoh Kode Tailwind CSS:</p>
+        <img src="code4.png" alt="Contoh kode HTML" class="code-image">
+      </li>
+      <li>
+        <b>🧩 Kesimpulan</b>
+        <p> <b>HTML, CSS, JavaScript, dan Tailwind CSS</b> merupakan empat komponen utama yang saling melengkapi dalam pembuatan website modern.
+            <b>HTML</b> berperan sebagai kerangka dasar yang menyusun struktur konten halaman web. <b>CSS</b> kemudian memperindah tampilan dengan mengatur warna, ukuran, tata letak, dan gaya visual agar lebih menarik bagi pengguna. Selanjutnya, <b>JavaScript</b> menambahkan interaktivitas dan logika dinamis, memungkinkan pengguna untuk berinteraksi langsung dengan elemen-elemen web seperti tombol, formulir, atau animasi.
+            Sementara itu, <b>Tailwind CSS</b> hadir sebagai alat bantu modern yang mempermudah proses styling dengan sistem class cepat dan efisien, sehingga pengembang dapat membuat desain profesional tanpa harus menulis kode CSS dari awal.
+
+        <p>Secara keseluruhan, keempat komponen ini bekerja secara harmonis: <b>HTML</b> membangun, <b>CSS</b> menghias, <b>JavaScript</b> menghidupkan, dan <b>Tailwind CSS</b> mempercepat proses desain. Dengan memahami dan menguasai semuanya, seseorang dapat menciptakan website yang tidak hanya fungsional, tetapi juga indah, interaktif, dan responsif di berbagai perangkat.</p>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container" id="pesankesan">
+    <h2>Pesan & Kesan</h2>
+    <p><b>💬 Pesan</b></p> 
+    <p>Perkuliahan Pemrograman Web memberikan banyak pengalaman berharga. Saya belajar bahwa membangun sebuah website tidak hanya tentang menulis kode, tetapi juga tentang berpikir logis, memahami kebutuhan pengguna, dan mengatur tampilan agar mudah digunakan. Pesan saya, jangan pernah menyerah ketika kode tidak berjalan dengan baik karena dari setiap error, kita belajar cara berpikir lebih kritis dan teliti.</p> 
+    <p>Dan untuk dosen pengajar mata kuliah ini saya ucapkan terima kasih kepada Ibu dosen atas bimbingan, kesabaran, dan semangatnya selama mengajar mata kuliah Pemrograman Web. Materi yang diberikan sangat bermanfaat dan membantu kami memahami bagaimana cara membangun serta mengembangkan sebuah website dengan baik. Semoga Ibu selalu diberikan kesehatan dan semangat dalam membimbing mahasiswa agar terus berkembang di bidang teknologi.</p>
+    <p><b>💭 Kesan</b></p> 
+    <p>Mata kuliah ini sangat menyenangkan sekaligus menantang. Awalnya terasa sulit memahami konsep HTML, CSS, dan JavaScript, tetapi setelah berlatih dan membuat proyek nyata, semua terasa lebih menarik. Saya juga senang karena perkuliahan ini mengajarkan bagaimana teori bisa diterapkan langsung menjadi sesuatu yang bisa dilihat dan digunakan. Pengalaman belajar Pemrograman Web membuat saya semakin yakin untuk terus mendalami dunia pengembangan web ke depannya.</p>
+    <p>Untu Kesan saya kepada dosen pengajar selama saya mengikuti pembelajaran hingga uts, Saya sangat mengapresiasi cara penyampaian materi yang jelas dan mudah dipahami. Dosen tidak hanya menjelaskan teori, tetapi juga memberikan contoh langsung yang membuat pembelajaran menjadi lebih hidup dan menarik. Terima kasih atas ilmu dan pengalaman berharga yang telah diberikan selama perkuliahan ini.</p>
+  </div>
+
+  <script>
+    function goToSchedule() {
+      document.getElementById("jadwal").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+    function toggleSplitView() {
+    let container = document.getElementById("profile-container");
+    container.classList.toggle("split-view");
+    }
+
+    function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+    }
+
+    function goTotutorial() {
+      document.getElementById("tutorial").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+    function goTopesankesan() {
+      document.getElementById("pesankesan").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+    function goToProfile() {
+  document.getElementById("profile-container").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+  </script>
+</body>
+</html>
