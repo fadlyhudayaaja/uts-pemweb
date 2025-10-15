@@ -298,32 +298,33 @@ header {
   header {
     flex-direction: column;
     text-align: center;
-    padding: 8px;
+    padding: 10px;
   }
 
   .header-buttons {
     flex-wrap: wrap;
     justify-content: center;
     margin-right: 0;
-    gap: 6px; /* jarak antar tombol lebih kecil */
+    gap: 6px; /* jarak antar tombol */
   }
 
   .header-buttons button {
-    font-size: 12px;     /* lebih kecil */
-    padding: 4px 8px;    /* tombol lebih ramping */
-    border-radius: 6px;
+    font-size: 13px;      /* ukuran teks tombol */
+    padding: 5px 8px;     /* ukuran tombol lebih kecil */
+    border-radius: 6px;   /* sudut membulat halus */
+    margin: 2px;          /* jarak antar tombol */
   }
 
   .title-button {
     font-size: 1.3em;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   /* Container */
   .container {
-    width: 92%;
-    padding: 12px;
-    margin: 15px auto;
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
   }
 
   /* Split view jadi vertikal */
@@ -333,39 +334,20 @@ header {
   }
 
   .profile-section img {
-    width: 75%;
+    width: 80%;
     height: auto;
   }
 
-  /* Tabel */
+  /* Tabel tetap seperti semula */
   table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 13px;
-    margin-top: 10px;
-    overflow-x: auto;
     display: block;
+    overflow-x: auto;
     white-space: nowrap;
-    border: 1px solid #ddd;
+    font-size: 13px;
   }
 
   th, td {
-    padding: 8px 10px;
-    text-align: left;
-    border: 1px solid #ccc;
-  }
-
-  th {
-    background-color: #f2f2f2;
-    font-weight: bold;
-  }
-
-  tr:nth-child(even) {
-    background-color: #fafafa;
-  }
-
-  tr:hover {
-    background-color: #f0f0f0;
+    padding: 8px;
   }
 
   /* Gambar kode biar pas di layar kecil */
@@ -375,31 +357,33 @@ header {
 }
 
 @media (max-width: 480px) {
+  .header-buttons {
+    gap: 4px;
+  }
+
   .header-buttons button {
-    width: auto;         /* tidak memenuhi lebar penuh */
-    margin-bottom: 4px;
-    font-size: 11px;
-    padding: 3px 6px;
+    width: auto;          /* tidak full satu baris */
+    font-size: 12px;      /* lebih kecil */
+    padding: 4px 7px;     /* lebih ramping */
+    margin: 2px;
   }
 
   th, td {
-    font-size: 11px;
-    padding: 5px;
+    font-size: 12px;
+    padding: 6px;
   }
 
   h2 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   p {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .title-button {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
-
-
 
 
