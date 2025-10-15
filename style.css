@@ -335,8 +335,18 @@ header {
   }
 
   .header-buttons button:hover {
+    background-color: #333;
+    color: #fff;
     transform: translateY(-2px); 
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+
+  /* Tombol tidak berubah saat ditekan */
+  .header-buttons button:active {
+    background-color: #f0f0f0; /* tetap warna normal */
+    color: #333;
+    transform: none;
+    box-shadow: none;
   }
 
   .title-button {
@@ -409,7 +419,119 @@ header {
     font-size: 1.2em;
   }
 }
+/* ===================== */
+/* RESPONSIVE DESIGN 📱  */
+/* ===================== */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
 
+  .header-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0;
+    gap: 6px; /* jarak antar tombol agar rapi */
+  }
 
+  /* Tombol lebih kecil dan rapi + hover effect */
+  .header-buttons button {
+    font-size: 12px;         
+    padding: 4px 8px;        
+    border-radius: 6px;      
+    border: 1px solid #ccc;  
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    width: auto; /* biar tombol menyesuaikan teks */
+  }
 
+  .header-buttons button:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-2px); 
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
 
+  /* Tombol tidak berubah saat ditekan */
+  .header-buttons button:active {
+    background-color: #f0f0f0; /* tetap warna normal */
+    color: #333;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .title-button {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  /* Container */
+  .container {
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  /* Split view jadi vertikal */
+  .container.split-view {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-section img {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Tabel */
+  table {
+    display: block;
+    overflow-x: auto;   
+    white-space: nowrap; 
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+
+  /* Gambar kode biar pas di layar kecil */
+  .code-image {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-buttons {
+    gap: 4px; /* jarak antar tombol tetap rapi */
+  }
+
+  .header-buttons button {
+    font-size: 11px;
+    padding: 3px 6px;
+    width: auto; /* tetap sejajar, tidak full-width */
+    margin-bottom: 4px;
+  }
+
+  th, td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .title-button {
+    font-size: 1.2em;
+  }
+}
