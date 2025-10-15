@@ -295,6 +295,11 @@ header {
 /* ===================== */
 @media (max-width: 768px) {
   /* Header */
+ /* ===================== */
+/* RESPONSIVE DESIGN 📱  */
+/* ===================== */
+@media (max-width: 768px) {
+  /* Header */
   header {
     flex-direction: column;
     text-align: center;
@@ -305,18 +310,39 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     margin-right: 0;
+    gap: 6px; /* jarak antar tombol */
   }
 
   .header-buttons button {
-    font-size: 14px;
-    padding: 6px 10px;
+    font-size: 13px;      /* ukuran teks sedikit lebih kecil */
+    padding: 5px 8px;     /* ukuran tombol lebih ramping */
+    border-radius: 6px;   /* sudut membulat halus */
+    margin: 2px;          /* jarak antar tombol */
   }
 
   .title-button {
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin-bottom: 10px;
   }
+}
 
+@media (max-width: 480px) {
+  .header-buttons {
+    gap: 4px; /* sedikit jarak antar tombol */
+  }
+
+  .header-buttons button {
+    width: auto;          /* tidak full 100%, biar sejajar */
+    font-size: 12px;      /* lebih kecil di layar sangat kecil */
+    padding: 4px 6px;     /* tombol ramping */
+    margin: 2px;
+    border-radius: 5px;   /* tetap lembut */
+  }
+
+  .title-button {
+    font-size: 1.2em;
+  }
+}
   /* Container */
   .container {
     width: 90%;
@@ -376,6 +402,7 @@ header {
     font-size: 1.2em;
   }
 }
+
 
 
 
