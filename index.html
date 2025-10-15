@@ -12,6 +12,7 @@
       <div class="header-buttons">
         <button onclick="goToSchedule()">Lihat Jadwal Kuliah 📅</button>
         <button onclick="goTotutorial()">Tutorial</button>
+        <button onclick="goTotataCara()">Tata Cara Membuat Website</button>
         <button onclick="goTopesankesan()">Pesan & Kesan</button>
         <button onclick="toggleDarkMode()">🌙 Dark Mode</button>
       </div>
@@ -203,7 +204,43 @@
     </ul>
   </div>
 
-  <div class="container" id="pesankesan">
+  <div class="container" id="tatacara">
+  <h2>Tata Cara Membuat Website Sederhana</h2>
+  <ol>
+    <li>Siapkan Folder Proyek</li>
+        <p>Buat folder baru di komputer kamu, misalnya <code>website-saya</code>. Di dalamnya buat tiga file utama: 
+        <code><b>index.html</b></code>, <code><b>style.css</b></code>, dan <code><b>script.js</b></code>.</p>
+
+    <li>Buat Struktur Dasar HTML</li>
+        <p>Gunakan file <code><b>index.html</b></code> untuk membuat kerangka utama halaman menggunakan tag <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, dan <code>&lt;body&gt;</code>.</p>
+        <p>💻 Contoh</p>
+        <img src="code6.png" alt="Contoh kode" class="code-image">
+    
+    <li>Tambahkan Gaya dengan CSS</li>
+        <p>Di file <code><b>style.css</b></code>, atur warna, tata letak, font, dan tampilan visual agar website terlihat menarik.</p>
+        <p>💻 Contoh</p>
+        <img src="code8.png" alt="Contoh kode" class="code-image">
+
+    <li>Tambahkan Interaktivitas dengan JavaScript</li>
+        <p>Di file <code><b>script.js</b></code>, tambahkan fitur interaktif seperti tombol, animasi, atau perhitungan otomatis.</p>
+        <p>💻 Contoh</p>
+        <img src="code9.png" alt="Contoh kode" class="code-image">
+
+    <li>Hubungkan File</li>
+        <p>Pastikan kamu sudah menautkan <b>CSS</b> dan <b>JavaScript</b> di dalam <b>HTML</b> menggunakan tag:</p>
+        <pre><b><code>&lt;link rel="stylesheet" href="style.css"&gt;
+&lt;script src="script.js"&gt;&lt;/script&gt;</code></b></pre>
+
+    <li>Uji di Browser</li>
+        <p>Buka file <code><b>index.html</b></code> di browser seperti Chrome atau Edge untuk melihat hasilnya.</p>
+
+    <li>Upload ke Hosting</li>
+        <p>Jika website sudah jadi, upload semua file ke hosting (seperti GitHub Pages, Netlify, atau 000webhost) agar bisa diakses publik.</p>
+  </ol>
+</div>
+
+
+ <div class="container" id="pesankesan">
     <h2>Pesan & Kesan</h2>
     <p><b>💬 Pesan</b></p> 
     <p>Perkuliahan Pemrograman Web memberikan banyak pengalaman berharga. Saya belajar bahwa membangun sebuah website tidak hanya tentang menulis kode, tetapi juga tentang berpikir logis, memahami kebutuhan pengguna, dan mengatur tampilan agar mudah digunakan. Pesan saya, jangan pernah menyerah ketika kode tidak berjalan dengan baik karena dari setiap error, kita belajar cara berpikir lebih kritis dan teliti.</p> 
@@ -242,10 +279,14 @@
     }
 
     function goToProfile() {
-  document.getElementById("profile-container").scrollIntoView({
-    behavior: "smooth"
-  });
-}
+      document.getElementById("profile-container").scrollIntoView({
+        behavior: "smooth"
+      });
+    }
+
+    function goTotataCara() { 
+      document.getElementById("tatacara").scrollIntoView({ behavior: "smooth" });
+    }
 
   </script>
 </body>
