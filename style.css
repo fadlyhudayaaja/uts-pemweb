@@ -320,9 +320,24 @@ header {
     margin-right: 0;
   }
 
+  /* Tombol lebih kecil dan rapi + hover effect */
   .header-buttons button {
-    font-size: 14px;
-    padding: 6px 10px;
+    font-size: 12px;         /* lebih kecil */
+    padding: 4px 8px;        /* lebih compact */
+    margin: 3px;             /* jarak antar tombol */
+    border-radius: 6px;      /* sudut lebih rapi */
+    border: 1px solid #ccc;  /* garis tipis agar terlihat tombol */
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease; /* animasi halus saat hover */
+  }
+
+  .header-buttons button:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-2px); /* tombol naik sedikit saat hover */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
 
   .title-button {
@@ -368,8 +383,10 @@ header {
 
 @media (max-width: 480px) {
   .header-buttons button {
-    width: 100%;
-    margin-bottom: 5px;
+    font-size: 11px;
+    padding: 3px 6px;
+    margin-bottom: 4px;
+    width: 100%;               /* tetap full-width untuk layar super kecil */
   }
 
   th, td {
@@ -389,3 +406,4 @@ header {
     font-size: 1.2em;
   }
 }
+
