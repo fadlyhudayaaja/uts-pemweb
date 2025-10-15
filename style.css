@@ -335,7 +335,6 @@ header {
   }
 
   .header-buttons button:hover {
-    color: #fff;
     transform: translateY(-2px); 
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
@@ -410,6 +409,7 @@ header {
     font-size: 1.2em;
   }
 }
+
 
 
 
